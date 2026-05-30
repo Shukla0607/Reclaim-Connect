@@ -31,7 +31,7 @@ import {
 import { appConfig } from './config';
 import './styles.css';
 
-const STORAGE_KEY = 'quittr-india-state-v1';
+const STORAGE_KEY = 'reclaim-india-state-v1';
 const rescueSeconds = 90;
 
 const quotes = [
@@ -516,12 +516,12 @@ function App() {
 
   return (
     <main className="app-shell">
-      <section className="phone-frame" aria-label="Quittr India app">
+      <section className="phone-frame" aria-label="Reclaim app">
         <div className="content-scroll">
           <header className="topbar">
             <div>
-              <p className="eyebrow">Quittr India</p>
-              <h1>Premanand Ji Recovery Path</h1>
+              <p className="eyebrow">Guruji's Recovery Path</p>
+              <h1>Reclaim</h1>
             </div>
             <button className="icon-button" aria-label="Open protection settings" onClick={() => setShowSettings(true)}>
               <Lock size={19} />
@@ -681,7 +681,7 @@ function App() {
 function AppFrame({ children }) {
   return (
     <main className="app-shell">
-      <section className="phone-frame" aria-label="Quittr India app">
+      <section className="phone-frame" aria-label="Reclaim app">
         <div className="content-scroll no-nav">{children}</div>
       </section>
     </main>
@@ -1413,7 +1413,7 @@ function AiPanel({ messages, onSend, onStartSos, onPledge, onMeditate }) {
           </div>
           <Bot size={22} />
         </div>
-        <p className="panel-copy">A recovery coach inspired by Premanand ji's centered path. Get immediate help with urges, guilt, and daily discipline.</p>
+        <p className="panel-copy">A recovery coach inspired by Guruji's centered path. Get immediate help with urges, guilt, and daily discipline.</p>
 
         <div className="ai-quick-actions">
           <button onClick={onPledge}>
@@ -1947,8 +1947,8 @@ function MorePanel({
       </section>
 
       <div className="app-info">
-        <p className="app-version">Quittr India · Version 1.0</p>
-        <p className="app-tagline">Built with devotion for your recovery journey</p>
+        <p className="app-version">Reclaim · Version 1.0</p>
+        <p className="app-tagline">Guruji's path to freedom and recovery</p>
       </div>
     </>
   );
